@@ -33,6 +33,7 @@ Una persona que entrena y quiere llevar su propio registro. La aplicación es lo
 - RF-3: CUANDO el usuario renombra un ejercicio, EL SISTEMA muestra el nuevo nombre en todas las plantillas y sesiones donde aparece.
 - RF-4: CUANDO el usuario elimina un ejercicio que no está en ninguna plantilla ni en ninguna sesión, EL SISTEMA lo elimina; SI está en alguna plantilla o sesión, ENTONCES EL SISTEMA rechaza la eliminación e informa el motivo.
 - RF-5: CUANDO el usuario configura un día de la semana, EL SISTEMA permite marcarlo como descanso o asignarle ejercicios, cada uno con cantidad de series y repeticiones previstas (números enteros mayores que 0).
+- RF-5b: SI el usuario asigna dos veces el mismo ejercicio a una plantilla, ENTONCES EL SISTEMA rechaza el cambio e informa el motivo; para más trabajo del mismo ejercicio se aumentan sus series previstas.
 - RF-6: CUANDO el usuario modifica una plantilla, EL SISTEMA aplica el cambio desde la fecha de la modificación, conserva las versiones anteriores con su fecha de vigencia y deja intactas las sesiones ya registradas.
 
 ### Registro de sesiones
@@ -80,6 +81,7 @@ Una persona que entrena y quiere llevar su propio registro. La aplicación es lo
 - Eliminar un ejercicio en uso: bloqueado con mensaje (RF-4).
 - Corregir una sesión antigua: la referencia es la última sesión de esa plantilla anterior a su fecha (RF-11).
 - Primer uso sin datos: las pantallas de historial y análisis lo indican en lugar de mostrarse vacías.
+- Mismo ejercicio dos veces en una plantilla: rechazado (RF-5b).
 
 ## Fuera de alcance
 - RIR, escala de fatiga y notas antes o después del entrenamiento.

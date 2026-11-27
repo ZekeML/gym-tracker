@@ -9,7 +9,7 @@ Estado: aprobada
 
 ## Tareas
 
-- [ ] **T1. Entorno y arnés del proyecto.** RNF-1, RNF-7
+- [x] **T1. Entorno y arnés del proyecto.** RNF-1, RNF-7
   - Se crea el entorno virtual (`.venv`), `requirements.txt`, la estructura de carpetas del plan, `.gitignore` (con `.venv/` y `data/`), `AGENTS.md` y `MEMORY.md`. Se agrega una prueba mínima: la aplicación de FastAPI se puede crear y su página inicial responde. Si las dependencias no se pueden instalar con Python 3.15, se usa Python 3.13 o 3.14 en el entorno virtual y la decisión se registra en `MEMORY.md`.
   - Hecho cuando: `pytest` encuentra y pasa al menos una prueba, la página mínima se ve en `localhost` desde el navegador y `AGENTS.md` referencia la constitución y la spec.
   - Entendé: qué es un entorno virtual y por qué `data/` no se sube a Git.

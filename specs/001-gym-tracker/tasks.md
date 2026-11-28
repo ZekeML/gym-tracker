@@ -14,7 +14,7 @@ Estado: aprobada
   - Hecho cuando: `pytest` encuentra y pasa al menos una prueba, la página mínima se ve en `localhost` desde el navegador y `AGENTS.md` referencia la constitución y la spec.
   - Entendé: qué es un entorno virtual y por qué `data/` no se sube a Git.
 
-- [ ] **T2. Base de datos y sus restricciones.** RF-1, RF-2, RF-4, RF-5b, RF-13, RF-16, RNF-3
+- [x] **T2. Base de datos y sus restricciones.** RF-1, RF-2, RF-4, RF-5b, RF-13, RF-16, RNF-3
   - Se escribe `schema.sql` y `db.py` con las 5 tablas, `PRAGMA user_version` y las claves foráneas activadas en cada conexión. Las pruebas cubren las restricciones del modelo:
     - Valores: peso mayor o igual a 0, repeticiones mayores a 0, números de serie y valores previstos mayores a 0, día de la semana entre 0 y 6.
     - Unicidad: nombre de ejercicio normalizado, versión por día de la semana y fecha de vigencia, ejercicio una sola vez por versión de plantilla, sesión por plantilla y fecha, serie por sesión, ejercicio y número.
